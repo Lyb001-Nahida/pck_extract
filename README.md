@@ -12,11 +12,12 @@
 ---
 
 ## 📁 目录结构
+```
 项目目录/
 ├── pck_extract.py # 主脚本
 ├── vgmstream/
 │ └── vgmstream-cli.exe # vgmstream 解码器（必需）
-
+```
 ---
 
 ## 🚀 使用方法
@@ -36,7 +37,7 @@ cmd运行时支持拖拽文件到命令行窗口，自动填入路径。
 📂 输出结构
 在 PCK 文件同目录下创建 {文件名}_extracted/ 文件夹，包含：
 
-
+```
 {文件名}_extracted/
 ├── raw/               # 阶段1：从 PCK 提取的原始 WAV（可能加密/非标准）
 │   ├── raw_0001.wav
@@ -46,6 +47,7 @@ cmd运行时支持拖拽文件到命令行窗口，自动填入路径。
     ├── decoded_0001.wav
     ├── decoded_0002.wav
     └── ...
+```
 ⚙️ 工作流程
 阶段 1：提取
 扫描 PCK 文件中所有 RIFF 头
@@ -71,10 +73,11 @@ cmd运行时支持拖拽文件到命令行窗口，自动填入路径。
 ##⚠️ 常见问题
 ❌ "找不到 vgmstream-cli.exe"
 确保 vgmstream-cli.exe 放在脚本目录的 vgmstream/ 子文件夹中：
-
+```
 pck_extract.py
 vgmstream/
     └── vgmstream-cli.exe
+```
 ❌ "没有提取到任何文件"
 确认 PCK 文件是否包含 WAV 数据
 
