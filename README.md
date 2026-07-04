@@ -7,7 +7,7 @@
 ## 📦 依赖
 
 - Python 3.9+
-- vgmstream-cli.exe（下载地址：https://github.com/vgmstream/vgmstream/releases）
+- vgmstream-cli.exe（下载地址：[vgmstream-cli.exe](https://github.com/vgmstream/vgmstream/releases) ）
 
 ---
 
